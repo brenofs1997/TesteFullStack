@@ -1,6 +1,6 @@
 <app-navbar></app-navbar>
 <div *ngIf="currentUser" class="edit-form">
- 
+
     <h4>Update User</h4>
     <form >
       <div class="form-group">
@@ -75,20 +75,19 @@
         />
       </div>
     </form>
-  
-  
+
+
     <button class="btn btn-primary" (click)="deleteUser(currentUser.id)">
       Delete
     </button>
-  
+
     <button type="submit" class="btn btn-primary" (click)="updateUser()">
       Update
     </button>
-    
+
   </div>
-  
+
   <div *ngIf="!currentUser">
     <br />
-    <p>Cannot access this Tutorial...</p>
+    <p>Update User...</p>
   </div>
-  
